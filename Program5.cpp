@@ -14,10 +14,7 @@ bool OR(bool p, bool q) {
 }
 
 bool neg(bool value, char choice) {
-    if (choice == '1') {
-        value = false;
-    }
-    return value;
+    return (choice == '1') ? !value : value;
 }
 
 void printPoly(char con, char NP, char NQ) {
